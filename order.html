@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzalicious Junction</title>
+    <meta name="description" content="I will try to make a Website to order a Pizza">
+    <meta name="robots" content="nofollow, noindex">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Link to separate toppings.css file -->
+    <link rel="stylesheet" href="./CSS/toppings.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Order Your Pizza</h1> <!-- Main heading for the page -->
+        <a href="index.html">
+            <img src="./images/logo1.jpg" alt="Pizza Logo" class="logo">
+        </a> <!-- Pizzalicious Junction logo, linked to the homepage -->
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <form action="process_order.php" method="POST">
+            <!-- Personal Information section -->
+            <fieldset class="info">
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <!-- Input field for name -->
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <!-- Input field for email -->
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required> <!-- Input field for phone -->
+
+                <label for="address">Address:</label> <!-- Corrected the attribute name to lowercase -->
+                <input type="text" id="address" name="address" required> <!-- Input field for address -->
+                
+                <div>
+                    <!-- Radio buttons for Pick-Up and Delivery options -->
+                    <input type="radio" id="pick-up" name="food" value="Pick-Up" required>
+                    <label for="pick-up">Pick-Up</label>
+
+                    <input type="radio" id="delivery" name="food" value="Delivery" required>
+                    <label for="delivery">Delivery</label>
+                </div>
+            </fieldset>
+
+            <label for="pizza-size">Pizza Size:</label>
+            <!-- Dropdown select menu for Pizza Size -->
+            <select id="pizza-size" name="pizza-size" required>
+                <option value="" disabled selected>Select Size</option> <!-- Added an empty value and placeholder text -->
+                <option value="Slice">Slice</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="Xtra-Large">Xtra-Large</option>
+            </select>
+                
+            <!-- Toppings section -->
+            <fieldset class="toppings">
+                <legend>Pizza Toppings:</legend>
+                <div>
+                    <input type="checkbox" id="onions" name="toppings[]" value="Onions">
+                    <label for="onions">Onions</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="greenpeppers" name="toppings[]" value="greenpeppers">
+                    <label for="greenpeppers">Green Peppers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="yellowpeppers" name="toppings[]" value="yellowpeppers">
+                    <label for="yellowpeppers">Yellow Peppers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="redpeppers" name="toppings[]" value="redpeppers">
+                    <label for="redpeppers">Red Peppers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pineapple" name="toppings[]" value="pineapple">
+                    <label for="pineapple">Pineapple</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="greenOlives" name="toppings[]" value="greenOlives">
+                    <label for="greenOlives">Green Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="blackolives" name="toppings[]" value="blackolives">
+                    <label for="blackolives">Black Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="broccoli" name="toppings[]" value="broccoli">
+                    <label for="broccoli">Broccoli</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lettuce" name="toppings[]" value="lettuce">
+                    <label for="lettuce">Lettuce</label>
+                </div>
+                <!-- Add other toppings checkboxes similarly -->
+            </fieldset>
+
+            <!-- Crust options section -->
+            <fieldset class="crust"> <!-- Corrected the class name to lowercase -->
+                <legend>Pizza Crusts:</legend>
+                <div>
+                    <input type="radio" id="thin-crust" name="crust" value="thin" required>
+                    <label for="thin-crust">Thin Crust</label>
+                </div>
+                <div>
+                    <input type="radio" id="thick-crust" name="crust" value="thick" required>
+                    <label for="thick-crust">Thick Crust</label>
+                </div>
+                <div>
+                    <input type="radio" id="stuffed-crust" name="crust" value="stuffed" required>
+                    <label for="stuffed-crust">Pizzalicious Crust</label>
+                </div>
+                <div>
+                    <input type="radio" id="gluten-free-crust" name="crust" value="gluten-free" required>
+                    <label for="gluten-free-crust">Gluten-Free Crust</label>
+                </div>
+            </fieldset>
+
+            <!-- Special Instructions section -->
+            <section>
+                <label for="special-instructions">Special Instructions:</label>
+                <textarea id="special-instructions" name="special-instructions"></textarea> <!-- Textarea for special instructions -->
+            </section>
+
+            <!-- Submit button -->
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2023 Pizza Palace. All rights reserved.</p> <!-- Copyright notice -->
+    </footer>
+</body>
+</html>

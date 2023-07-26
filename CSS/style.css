@@ -1,0 +1,171 @@
+/* CSS File */
+
+/* Common styles for all pages */
+
+/* Set default font and reset margin and padding for the whole document */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the header section */
+header {
+  background-color: #333;
+  color: #ff9800;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove margin for the h1 element inside the header */
+header h1 {
+  margin: 0;
+}
+
+/* Styling for the logo image */
+.logo {
+  height: 70px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Padding for the main content section */
+main {
+  padding: 20px;
+}
+
+/* Styling for the footer section */
+footer {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 2000px; /* Adding a large margin to push the footer to the bottom of the page */
+}
+
+/* Styles specific to index.html */
+
+/* Styling for the main image */
+.main-image {
+  position: relative;
+  width: 100%;
+}
+
+/* Styling for the image inside the main image container */
+.main-image img {
+  width: 100%;
+  display: block; /* Ensuring the image behaves as a block element */
+}
+
+/* Styling for the image buttons section */
+.image-buttons {
+  position: absolute; /* Position the buttons relative to the parent .main-image */
+  left: 0; /* Position the buttons on the left side of the .main-image */
+  top: 15%; /* Adjust the vertical position of the buttons as needed */
+  transform: translateY(-50%); /* Center the buttons vertically */
+  display: grid;
+  justify-content: left;
+}
+
+/* Styling for the buttons on the image */
+.About-Us-button,
+.order-now-button,
+.Contact-Us-button {
+  font-size: 25px;
+  background-color: #FF9800;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+  margin: 7px; /* Add some spacing between buttons */
+  text-decoration: none;
+}
+
+/* Hover effect for buttons on the image */
+.About-Us-button:hover,
+.order-now-button:hover,
+.Contact-Us-button:hover {
+  background-color: #F57C00;
+}
+
+/* Hover effect on navigation links */
+a:hover {
+  color: #f7f7f7; /* Change the link color on hover */
+}
+
+/* Styles specific to order.html */
+
+/* Styling for the form element */
+form {
+  margin: 0 auto;
+  justify-content: stretch;
+}
+
+/* Styling for the form groups inside the form */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for the personal information section */
+fieldset.info {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Styling for the crust options section */
+fieldset.crust {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+/* Styling for the toppings section */
+fieldset.toppings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Styling for each topping checkbox */
+fieldset.toppings div {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the submit button */
+button {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles specific to aboutus.html */
+
+/* Styling for the section headings inside the aboutus.html page */
+section h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Styles specific to contactus.html */
+
+/* Styling for the contact section */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling for the contact section paragraphs */
+.contact-section p {
+  margin-bottom: 20px;
+}

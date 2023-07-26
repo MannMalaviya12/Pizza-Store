@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzalicious Junction</title>
+    <meta name="description" content="I will try to make a Website to order a Pizza"> <!-- Description of the website -->
+    <meta name="robots" content="nofollow, noindex"> <!-- Instructions for web robots -->
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <!-- Header content, usually contains the logo and navigation links -->
+        <a href="index.html">
+            <img src="./images/logo1.jpg" alt="Pizza Logo" class="logo"> <!-- Pizzalicious Junction logo -->
+        </a>
+    </header>
+
+    <main>
+        <!-- Main content of the page -->
+        <section class="contact-section">
+            <h1>Contact Us</h1> <!-- Heading for the contact section -->
+            <p>If you have any questions or inquiries, feel free to get in touch with us:</p> <!-- Introduction paragraph -->
+            <form action="submit_form.php" method="POST"> <!-- Form to submit user inquiries (Replace 'submit_form.php' with your form handling script) -->
+                <div class="form-group">
+                    <label for="name">Name:</label> <!-- Label for the name input field -->
+                    <input type="text" id="name" name="name" required> <!-- Input field for user's name -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label> <!-- Label for the email input field -->
+                    <input type="email" id="email" name="email" required> <!-- Input field for user's email -->
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label> <!-- Label for the message textarea -->
+                    <textarea id="message" name="message" rows="4" required></textarea> <!-- Textarea for user's message -->
+                </div>
+                <button type="submit">Send Message</button> <!-- Submit button to send the message -->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content, typically includes copyright, links, or other relevant information -->
+        <h5>
+            Make Sure to order your favorite Pizza!! <!-- Footer message -->
+        </h5>
+    </footer>
+</body>
+</html>
